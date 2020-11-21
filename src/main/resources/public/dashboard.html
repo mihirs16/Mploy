@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mploy | Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js"></script>
+</head>
+<body onload="loadData();">
+    <h1>🏢 <span>Mploy Dashboard</span></h1>
+    
+    <table>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Gender
+            </th>
+            <th>
+                Date of Birth
+            </th>
+            <th>
+                Country
+            </th>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+
+    <div>
+        <button onclick="managerPopup('flex');">
+            Manage Employee
+        </button>
+        <button onclick="deletePopup('flex');">
+            Delete Employee
+        </button>
+    </div>
+
+    <div class="popup" id="manage">
+        <div class="panel">
+            <form>
+
+                <div>
+                    <label for="id">ID</label><br>
+                    <input type="number" name="id" id="id">
+                </div>
+
+                <div>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div>
+                    <label for="gender">Gender</label><br>
+                    <select name="gender" id="gender">
+                        <option value="Male">Female</option>
+                        <option value="Female">Male</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" name="dob" id="dob">
+                </div>
+
+                <div>
+                    <label for="country">Country</label><br>
+                    <input type="text" name="country" id="country">
+                </div>
+
+                <div>
+                    <center>
+                        <button type="button" onclick="editEmployee();">
+                            Update
+                        </button>
+                        <button type="button" onclick="createEmployee();">
+                            New
+                        </button>
+                    </center>
+                </div>
+            </form>
+        </div>
+        <button onclick="managerPopup('none')">
+            Close
+        </button>
+    </div>
+
+    <div class="popup" id="delete">
+        <div class="panel">
+            <form>
+
+                <div>
+                    <label for="id">ID</label><br>
+                    <input type="number" name="id" id="del_id">
+                </div>
+
+                <div>
+                    <center>
+                        <button type="button" onclick="removeEmployee();">
+                            Delete
+                        </button>
+                    </center>
+                </div>
+            </form>
+        </div>
+        <button onclick="deletePopup('none')">
+            Close
+        </button>
+    </div>
+
+</body>
+</html>

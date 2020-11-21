@@ -1,36 +1,51 @@
-# Spring boot and MongoDB REST API - CRUD Example
+# 🍃 Mploy
 
-The application demonstrates the REST API using Spring boot and MongoDB. The application demonstrates all the database operations like Create, Read, Update and Delete.
+Homework assignment using Spring Boot and MongoDB for the subject 18CSE343T Web Application Development. Includes a CRUD API & Frontend for Employee Database Management.
 
-## Tools and Technologies used
+![Java](https://img.shields.io/badge/Using-Java-blue?style=for-the-badge&logo=appveyor)
+![Spring Boot](https://img.shields.io/badge/Using-Spring%20Boot-green?style=for-the-badge&logo=appveyor)
 
-* Spring boot 2.1.2
-* MongoDB
-* Eclipse Oxygen
-* Java1.8
+## Built Using
 
-> Note: I am using [mLab](https://mlab.com/) for MongoDB database
+| Tools | Version |
+| ----- | ------- |
+| OpenJDK | 11.0.9.1 |
+| Apache Maven | 3.6.3 |
+| Spring Boot | - |
 
-## Step to install
+* Database hosted on MongoDB
 
-1. **Clone the application**
+## Getting Started
+
+* Fork this repository
+* Clone your repository forked from this one
 
 ```bash
-git clone https://github.com/scbushan05/spring-boot-mongodb.git
+git clone https://github.com/:username/Mploy
 ```
 
-2. **Build and run the backend app using maven**
+* Add your MongoDB URI to `src\main\resources\application.properties`
+
+```java
+spring.data.mongodb.uri=//ENTER MONGO URI HERE //
+```
+
+* Build the project using Maven
 
 ```bash
-cd spring-boot-mongodb-rest-api
+cd Mploy
 mvn package
+```
+
+* Run the Spring Boot server locally
+
+```bash
 java -jar target/spring-boot-mongodb-rest-api-0.0.1-SNAPSHOT.jar
 ```
 
-Alternatively, you can run the app without packaging it using -
+* You can view the frontend at `localhost:8080/dashboard.html` in your browser
 
-```bash
-mvn spring-boot:run
-```
+* All API requests are made to `localhost:8080/api/`
 
-The backend server will start at <http://localhost:8080>.
+---
+This work is heavily based on [Bushan Sirgur's CRUD Demo](https://github.com/scbushan05/spring-boot-mongodb).

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+}
+
+h1 > span {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #444444;
+}
+
+button, input[type=button] {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+div.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(36, 36, 36, 0.7);
+}
+
+div.popup > div {
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+div.panel {
+    width: 400px;
+    height: 600px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+
+input[type=number], input[type=text], input[type=date], select {
+    padding: 10px;
+    font-size: 20px;
+}
+
+form {
+    font-size: 20px;
+}
+
+form > div {
+    margin: 20px;
+}
